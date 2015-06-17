@@ -6,7 +6,7 @@ var tamanhoVideo =" width:280px";
 var tamanhoVideo1 = "width:auto";
 
 // Objeto peer.
-var peer = new Peer({host:'192.168.1.102', port: 9000, debug: true, config: {'iceServers': [
+var peer = new Peer({host:'http://estagiopeerjsserver.herokuapp.com', port: 9000, debug: true, config: {'iceServers': [
       { url: 'stun:stun.l.google.com:19302' }
     ]}});
 
