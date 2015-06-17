@@ -6,7 +6,7 @@ var tamanhoVideo =" width:280px";
 var tamanhoVideo1 = "width:auto";
 
 // Objeto peer.
-var peer = new Peer({　host:'estagio-peerjserver.herokuapp.com/', secure:true, port:443, key: 'peerjs', debug: 3});
+var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3});
 
 var userList = [];
 // Busca todos os ids criados no servidor.
