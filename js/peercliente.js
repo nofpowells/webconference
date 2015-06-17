@@ -2,11 +2,11 @@
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
 var mediaOptions = { audio: true, video: true};
-var tamanhoVideo =" width:280px";
+var tamanhoVideo = "width:280px";
 var tamanhoVideo1 = "width:auto";
 
 // Objeto peer.
-var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3});
+var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:9000, key: 'peerjs', debug: 3, allow_discovery: true});
 
 var userList = [];
 // Busca todos os ids criados no servidor.
